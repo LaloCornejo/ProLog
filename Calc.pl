@@ -40,6 +40,3 @@ converGrRad(Y):- Y >= 0, Rad is Y*(pi/180), write("El valor en Radianes es: "), 
     S is sin(Rad), write("El seno es: "), write(S), nl,
     C is cos(Rad), write("El cos es: "), write(C), nl,
     T is tan(Rad), write("El tan es: "), write(T), nl.
-
-% Conversion Seno, Cos, Tan 
-% Sen =
