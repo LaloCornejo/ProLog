@@ -30,7 +30,7 @@ validar(A, B, C):- (A<0; A>10), (B<0; B>10), (C<0; C>10), write("Todo mal"), cal
 
 validar(A, B, C):- (A<0; A>10), (B >= 0 , B =< 10), (C >= 0 , C =< 10), write("1er mal"), nl, cali.
 validar(A, B, C):- (A >= 0 , A =< 10), (B<0; B>10), (C >= 0 , C =< 10), write("2do mal"), nl, cali.
-validar(A, B, C):- (A >= 0 , A =< 10), (B >= 0 , B =< 10), (C<0; C>10), write("3ro mal"), nl, cali.
+validar(A, B, C):- (A >= 0 , A =< 10), (B >= 0 , B =< 10), (C<0 , C>10), write("3ro mal"), nl, cali.
 
 validar(A, B, C):- (A >= 0 , A =< 10), (B >= 0 , B =< 10), (C >= 0 , C =< 10), prom(A, B, C).
 prom(A, B, C):- P is (A + B + C) / 3, write("Promedio: "), write(P), nl, nl, rangos(P).
